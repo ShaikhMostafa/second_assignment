@@ -1,0 +1,236 @@
+/* Goole Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto+Slab&display=swap");
+/* Goole Font */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(209, 207, 207);
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0;
+}
+nav > .logo {
+}
+.nav-bar > ul {
+  display: flex;
+}
+.nav-bar > ul > li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.nav-bar > ul > li > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.top-bannar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.bannar-text {
+  width: 50%;
+  padding: 0 20px;
+  line-height: 30px;
+}
+.bannar-text > h1 {
+  width: 75%;
+  line-height: 50px;
+}
+.bannar-text p {
+  width: 400px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+.bannar-img {
+  width: 50%;
+  padding: 0 20px;
+}
+main > .heading {
+  text-align: center;
+  margin: 50px 0;
+}
+.main-img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.img-text {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black 0.6 5%;
+  display: none;
+  color: rgb(0, 0, 0);
+}
+.main-img:hover img {
+  transform: rotate(45deg);
+  transition: 1s;
+}
+.main-img:hover .img-text {
+  display: block;
+  color: orangered;
+  background-color: rgba(0, 0, 0, 30%);
+  transition: 3s;
+}
+.img-text p {
+  width: 300px;
+  text-align: justify;
+}
+button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 40px;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 70px;
+  padding: 20px 40px;
+  border-top: 1px solid rgb(156, 154, 154);
+  border-bottom: 1px solid rgb(141, 137, 137);
+}
+.tamplete {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  line-height: 30px;
+  background-color: #fff;
+}
+.card img {
+  width: 100%;
+}
+
+.checked {
+  color: orange;
+}
+.btn {
+  text-align: right;
+  margin: 20px 0;
+}
+.btn > a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+/* Grid css */
+.right-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-box > img {
+  width: 580px;
+}
+.box {
+  position: relative;
+  width: 290px;
+  height: 290px;
+}
+.box:hover .card-box {
+  display: block;
+  transform: scale(1);
+}
+.card-box {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #0810136b;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.camera-box {
+  margin: 50px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+/* Grid css */
+
+footer {
+  background-color: #001131;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+  margin-top: 30px;
+  line-height: 15px;
+}
+.social-icon {
+  margin: 20px;
+}
+footer .fab {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #192a53;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+footer .fab:hover {
+  color: orangered;
+}
+footer p {
+  margin: 10px 0;
+}
+.color {
+  color: orangered;
+  text-decoration: underline;
+}
